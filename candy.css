@@ -1,0 +1,24 @@
+body {
+    background: url("background.jpg") no-repeat center center fixed; /* Sets the page's background to a specific image, centering it and preventing it from repeating. The background is fixed, meaning it won't scroll with the page. */
+    background-size: cover; /* Ensures the background image covers the entire page, scaling the image as needed to avoid any white space. */
+    font-family: Arial, Helvetica, sans-serif; /* Sets the default font for text in the body. It tries Arial first, then Helvetica, and falls back to any available sans-serif font if neither is available. */
+    color: rgb(71, 21, 50); /* Sets the default text color using RGB values. */
+    text-align: center; /* Centers text horizontally within its containing element. */
+}
+
+#board {
+    width: 450px; /* Sets the width of the game board to 450 pixels. */
+    height: 450px; /* Sets the height of the game board to 450 pixels, making it square. */
+    background-color: rgb(200, 184, 232); /* Sets the background color of the game board using RGB values. */
+    border: 5px solid rgb(72, 3, 89); /* Adds a 5-pixel-thick solid border around the game board with a specific color. */
+    border-radius: 10px; /* Rounds the corners of the game board's border to create a smoother, more polished look. */
+    margin: 0 auto; /* Centers the game board horizontally within its parent element by setting the top and bottom margins to 0 and the left and right margins to auto. */
+    display: flex; /* Uses Flexbox to lay out the child elements of the game board. This enables a flexible and efficient arrangement of game tiles. */
+    flex-wrap: wrap; /* Allows child elements (game tiles) to wrap onto multiple lines, if necessary, ensuring they remain within the bounds of the game board. */
+}
+
+
+#board img {
+    width: 50px; /* Sets the width of each image (game tile) within the board to 50 pixels. */
+    height: 50px; /* Sets the height of each image (game tile) within the board to 50 pixels, ensuring the tiles are square. */
+}
